@@ -1,15 +1,13 @@
 from random import randint
 from time import sleep
-ale = randint(0, 5) # RANDINT CRIA UM NUMERO ALEATORIO
+comp = randint(0,10)
 print("-=-" * 20)
-print("Vou pensar em um numero entre 0 e 5 ! Tente adivinhar...")
+print("Vou pensar em um numero de 0 a 10! Tente adivinhar se for capaz...")
 print("-=-" * 20)
-adi = int(input("Escolha um numero de 0 a 5 : "))
-print("PROCESSANDO...")
+jogador = int(input("Numero: "))
+print("PROCESSANDO")
 sleep(2)
-if (adi == ale):
-    sleep("Processando...")
-    print("Parabens voce acertou! O numero que pensei foi {}".format(ale))
+if (jogador == comp):
+    print("Se é o mestre dos magos então ! Acertou o que sabe")
 else:
-
-    print("ERROUUUO numero que pensei foi {}".format(ale))
+    print("HAHAHA! ERROU FEIO! Pensei no numero: {}".format(comp))
